@@ -1,0 +1,185 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+* {
+    box-sizing: border-box;
+}
+header {
+    text-align: right;
+    width: 100%;
+    border: 0px solid red;
+}
+header nav ul {
+    list-style: none;
+    margin-right: 10px;
+    text-align: right;
+}
+header nav ul li {
+    display: inline;
+    margin-right: 5px;
+    padding: 3px;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+main {
+    padding: 1em;
+}
+
+input, select, textarea {
+    width: auto;
+    margin:5px 0;
+    border-radius: 3px;
+    font-size:14px;
+    border: none;
+    background-color: #4f5c87;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+input::placeholder, textarea::placeholder {
+    color: white;
+}
+
+textarea {
+    width: 50%;
+}
+
+.delButton {
+    float: right;
+}
+table:not(#adminTable) {
+    padding: 14px;
+    float: left;
+    margin: 20px;
+    background-color: #FFFA94;
+    box-shadow: #cfcfcf 5px 5px 15px;
+}
+.wrong{
+    color: red;
+}
+
+#userForm, #adminTable, #registerUser, #loginForm {
+    width: 50%;
+    background: rgb(47,56,100);
+    background: radial-gradient(circle, rgba(47,56,100,1) 50%, rgba(24,31,74,1) 100%);
+    color: white;
+    margin: auto;
+    padding: 3%;
+    padding-left: 8%;
+    margin-top: 3%;
+    box-shadow: 5px 5px 15px #cfcfcf;
+    border-radius: 10px;
+}
+
+#adminTable {
+    text-align: center;
+}
+
+input #adminUser {
+    width: 400px;
+
+}
+
+.go, .delButton {
+    background-color: #f76bac;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 3px;
+    font-size:14px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.delButton {
+    margin-bottom: 5%;
+}
+
+.headline {
+    color: #f76bac;
+    margin-left: 25.1%;
+}
+
+#toDo {
+    margin-left: 24%; 
+    width: 69%;
+}
+
+p {
+    margin-left: 25.1%;
+}
+
+#toDo table {
+    width: 250px;
+}
+
+.smallHeading {
+    font-weight: 900;
+    margin-left: 10%;
+}
+
+#dxml {
+    float: left;
+    margin-left: 1%;
+}
+
+#djson {
+    float: left;
+    margin-left: 25%;
+}
+
+.delete {
+    text-decoration: none;
+    font-weight: 900;
+    color: rgba(24,31,74,1);
+}
+
+.deleteAdmin {
+    text-decoration: none;
+    font-weight: 900;
+    color: white;
+    font-size: 25px;
+    margin-left: 5%;
+}
+
+#ugo {
+    margin-left: 148%;
+}
+
+.rolein {
+    margin-left: 10.5%;
+}
+
+.firstin {
+    margin-left: 5%;
+}
+
+.lastin {
+    margin-left: 5.5%;
+}
+
+.emailin {
+    margin-left: 10%;
+}
+
+.passwordin {
+    margin-left: 6.5%;
+}
+
+#goreg {
+    margin-left: 16%;
+    margin-top: 2%;
+}
+
+.emaillog {
+    margin-left: 2.5%;
+}
+
+#golog {
+    margin-left: 9.5%;
+    margin-top: 2%;
+}

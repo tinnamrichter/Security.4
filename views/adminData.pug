@@ -1,0 +1,29 @@
+extends layout
+
+block content
+    form(id='adminUser' action='/users/admin' method='POST')
+        table#adminTable
+            tr
+                td.col_l Role
+                    td
+                        select(name='roles' value=`${user[0].role}`)
+                            each roles in role
+                                if user[0].role === roles.name
+                                    option(selected="selected" value=`${user[0].role}`) #{roles.name}
+                                else
+                                    option(value=`${roles.name}`) #{roles.name}
+                tr
+                    td.col_l First name
+                    td
+                        input(type='text' name='firstName' value=`${user[0].firstName}`)
+                tr
+                    td.col_l Last name
+                    td
+                        input(type='text' name='lastName' value=`${user[0].lastName}`)
+                tr
+                    td.col_l Email
+                    td
+                        input(type='text' name='email' value=`${user[0].email}` required)
+                tr
+                    td
+                        input(type='submit' value='Update data' class='go' id="ugo")

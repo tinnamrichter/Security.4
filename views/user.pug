@@ -1,0 +1,32 @@
+extends layout
+
+block content
+    h2.headline= "Add a new to do"
+    form(action="/users/user/" + read method="POST" id="userForm")
+        input(type="text", name="name" id="name" placeholder="User" value=read readonly)
+        
+        input(type="text", name="title" placeholder="Title")
+        br
+        label Start &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &ensp; Deadline
+        br
+        input(type="date", name="start" id="start")
+        input(type="date", name="deadline" id="deadline")
+        br
+        textarea(type="textarea" rows="10", name="text" placeholder="Message")
+        br
+        input(type='submit' value='GO' class='go')
+    p.wrong= wrong
+    
+    form(action="/users/download/json" id="djson" method="POST")
+        input(type="hidden", name="email" value=read)
+        input(type='submit' value='Download JSON' class='go')
+  
+    form(action="/users/download/xml" id="dxml" method="POST")
+        input(type="hidden", name="email" value=read)
+        input(type='submit' value='Download XML' class='go')
+    br
+    br
+    br
+    h2.headline= "See the to dos"
+    p= "On this page you can save your to dos. If you have made an error you can make a new post, by deleting it or write the title of it in the form 😘"
+    div#toDo

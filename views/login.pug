@@ -1,0 +1,17 @@
+extends layout
+
+block content
+
+    form(action="/users/login" method="POST" id="loginForm")
+        label E-mail
+        input(type="text", name="email" class="emaillog")
+        br
+        label Password
+        input(type="password", name="password" class="paslog")
+        br
+        button(type="submit" class="go" id="golog") GO
+    p.wrong= wrong
+
+
+
+

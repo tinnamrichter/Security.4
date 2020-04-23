@@ -1,0 +1,28 @@
+doctype html
+html
+    head
+        title= 'My to do list'
+        link(rel='stylesheet', href='/stylesheets/style.css')
+        script(type='module' src=scriptLink)
+        script(src='https://kit.fontawesome.com/9f34627289.js')
+    body
+        header
+            nav
+                ul
+                    li
+                        a(href="/users/register") Register
+                    li
+                        a(href="/users/login") Login
+            nav
+                ul
+                    li
+                        a(href="/") Home
+                    li
+                        a(href=link) My Site
+        main
+            block all
+                h1.headline= 'My to do list'
+                h2.headline= subtitle
+                p.who= who
+                p= messages
+                    block content

@@ -1,0 +1,46 @@
+{
+  _id: 5e85a1f45ed2eceafc9fdb45,
+  title: 'TinnaTest',
+  __v: 0,
+  created: 2020-04-02T08:27:32.199Z,
+  deadline: null,
+  start: null,
+  text: '',
+  userID: 'tinna@mail.com'
+},{
+  _id: 5e85a3b35ed2eceafc9fdbc7,
+  title: 'Tobias',
+  __v: 0,
+  created: 2020-04-02T08:34:59.250Z,
+  deadline: 2020-04-17T00:00:00.000Z,
+  start: 2020-04-02T00:00:00.000Z,
+  text: '',
+  userID: 'tinna@mail.com'
+},{
+  _id: 5e85a13e5ed2eceafc9fdb0c,
+  title: 'test',
+  __v: 0,
+  created: 2020-04-02T08:24:30.938Z,
+  deadline: null,
+  start: null,
+  text: '',
+  userID: 'tinna@mail.com'
+},{
+  _id: 5e85a2605ed2eceafc9fdb66,
+  title: 'test454',
+  __v: 0,
+  created: 2020-04-02T08:29:20.108Z,
+  deadline: 2020-04-02T00:00:00.000Z,
+  start: 2020-04-03T00:00:00.000Z,
+  text: '',
+  userID: 'tinna@mail.com'
+},{
+  _id: 5e8485f75ed2eceafc9fd404,
+  title: 'tinna',
+  __v: 0,
+  created: 2020-04-01T12:19:02.026Z,
+  deadline: 2020-04-01T00:00:00.000Z,
+  start: 2020-04-01T00:00:00.000Z,
+  text: '',
+  userID: 'tinna@mail.com'
+}
