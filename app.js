@@ -3,6 +3,7 @@ const express = require('express');
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
+const fs = require('fs');
 const bodyParser = require("body-parser");              // added for POST data handling
 const session = require('express-session');             // added for state
 const favicon = require('serve-favicon');               // favicon extra
@@ -13,11 +14,17 @@ const usersRouter = require('./routes/users');          // router concerned with
 const app = express();
 app.locals.pretty = app.get('env') === 'development';   // pretty print html
 
+// create a write stream (in append mode)
+var accessLogStream = fs.createWriteStream(path.join(__dirname, './logs/accesstiny.log'), {flags: 'a'});
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 
-app.use(logger('dev'));
+app.use(logger('tiny', { stream: accessLogStream }));
+app.get('/', function (req, res) {
+  res.send('hello, world!');
+});
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
